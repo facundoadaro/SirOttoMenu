@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menú de Pizzas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <style>
+      body {
+        background-color: #fff7e6;
+        color: #333;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 0.5rem;
+      }
+      header img {
+        max-width: 200px;
+        margin-bottom: 1.5rem;
+      }
+      header h1 {
+        color: #d9534f;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .pizza-card {
+        display: flex;
+        align-items: center;
+        border: 2px solid #f0ad4e;
+        border-radius: 8px;
+        padding: 0.5rem;
+        margin-bottom: 0.75rem;
+        background-color: #ffe4b3;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .pizza-card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        margin-right: 0.75rem;
+        object-fit: cover;
+      }
+      .pizza-card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .pizza-card h3 {
+        margin: 0 0 0.25rem;
+        font-size: 1.2rem;
+        color: #d9534f;
+      }
+      .pizza-card p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      footer {
+        background-color: #ffe4b3;
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #333;
+        margin-top: 1rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 600px) {
+        .pizza-card {
+          flex-direction: row;
+          padding: 0.5rem;
+        }
+        .pizza-card img {
+          width: 60px;
+          height: 60px;
+          margin-right: 0.5rem;
+        }
+        .pizza-card-content {
+          font-size: 0.875rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./SirOttosinfondo.png"
+        alt="Logo de la empresa"
+      />
+      <h1>Menú de Pizzas</h1>
+    </header>
+
+    <main class="container">
+      <div class="pizza-card">
+        <img
+          src="https://source.unsplash.com/80x80/?pizza,pepperoni"
+          alt="Pizza de Pepperoni"
+        />
+        <div class="pizza-card-content">
+          <h3>Pizza de Pepperoni</h3>
+          <p>
+            La clásica pizza con pepperoni, queso derretido y base crujiente.
+          </p>
+          <p><strong>Precio:</strong> $10.99</p>
+        </div>
+      </div>
+
+      <div class="pizza-card">
+        <img
+          src="https://source.unsplash.com/80x80/?pizza,vegetarian"
+          alt="Pizza Vegetariana"
+        />
+        <div class="pizza-card-content">
+          <h3>Pizza Vegetariana</h3>
+          <p>
+            Deliciosa mezcla de vegetales frescos, queso mozzarella y hierbas
+            aromáticas.
+          </p>
+          <p><strong>Precio:</strong> $11.99</p>
+        </div>
+      </div>
+
+      <div class="pizza-card">
+        <img
+          src="https://source.unsplash.com/80x80/?pizza,gourmet"
+          alt="Pizza Gourmet"
+        />
+        <div class="pizza-card-content">
+          <h3>Pizza Gourmet</h3>
+          <p>Ingredientes sofisticados como queso brie, prosciutto y rúcula.</p>
+          <p><strong>Precio:</strong> $14.99</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>¡Gracias por visitarnos!</footer>
+  </body>
+</html>
